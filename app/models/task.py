@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, Boolean, ForeignKey
 from sqlalchemy.orm import relationship
-from Module_17.app.models.user import User
-from Module_17.app.backend.db import Base
+from models.user import User
+from backend.db import Base
 
 class Task(Base):
     __tablename__ = 'tasks'
