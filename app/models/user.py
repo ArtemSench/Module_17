@@ -14,3 +14,6 @@ class User(Base):
 
     # Связь с моделью Task
     tasks = relationship("Task", back_populates="user")
+
+from sqlalchemy.schema import CreateTable
+print(CreateTable(User.__table__))
